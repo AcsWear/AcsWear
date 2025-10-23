@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AcsWear — Items Catalog</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="brand">
+			 <a href="#" id="logoLink">
+                <img src="assets/images/logo.png" alt="AcsWear Logo" class="logo"/>
+				</a>
+                <div class="brand-text">
+                    <h1>AcsWear — Items Catalog</h1>
+                    <p>Список доступных в скрипте предметов</p>
+                </div>
+            </div>
+            
+            <div class="search">
+                <input id="search" placeholder="Поиск: Название, Model ID, UID..." />
+            </div>
+        </header>
+
+        <main>
+            <div class="controls">
+                <div class="left">
+                    <div class="stats">
+                        <b>Всего предметов:</b> <span id="total">0</span>
+                    </div>
+                    <div class="perpage-container">
+                        <label for="perpage">На странице:</label>
+                        <select id="perpage">
+                            <option value="50">50</option>
+                            <option value="100" selected>100</option>
+                            <option value="150">150</option>
+                            <option value="200">200</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="source-info">
+                    <a href="https://www.blast.hk/threads/242357/" target="_blank" class="source-link">
+                        🔗 Скачать наш скрипт
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid" id="grid"></div>
+
+            <div class="pager" id="pager"></div>
+
+            <footer>
+                <p>© 2025 AcsWear — All rights reserved</p>
+                <p class="footer-note">Скачать скрипт <a href="https://www.blast.hk/threads/242357/" target="_blank">blast.hk</a></p>
+            </footer>
+        </main>
+    </div>
+
+    <div class="overlay" id="overlay" aria-hidden="true">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div class="modal-image">
+                <img id="modal-img" src="assets/images/item-placeholder.jpg" alt="item"/>
+            </div>
+            <div class="info">
+                <div class="modal-header">
+                    <h2 id="modalTitle">Item name</h2>
+                    <button class="close-btn" id="closeBtn" title="Закрыть" aria-label="Закрыть">&times;</button>
+                </div>
+                <div class="modal-meta">
+                    <p class="meta"><strong>UID:</strong> <span id="modal-uid"></span></p>
+                    <p class="meta"><strong>Model ID:</strong> <span id="modal-model"></span></p>
+                </div>
+                <div id="modal-desc" class="modal-desc"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="assets/js/items.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
