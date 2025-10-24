@@ -2887,8 +2887,9 @@ const itemsData = [
   },
   {
     "name": "Костянной бронежилет",
-    "UID": "item_460",
+    "UID": "armour_023",
     "model": 9844,
 	"img": 10008
   }
 ];
+
