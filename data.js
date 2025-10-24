@@ -2727,7 +2727,7 @@ const itemsData = [
     "name": "Хэллоуинский молот",
     "UID": "item_458",
     "model": 9925,
-	"img": 10007
+	"img": 10006
   },
   {
     "name": "Паучьи ноги",
@@ -2880,3 +2880,4 @@ const itemsData = [
 	"img": 10008
   }
 ];
+
