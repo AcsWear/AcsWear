@@ -1110,6 +1110,12 @@ const itemsData = [
 	"img": 5504
   },
   {
+    "name": "Космическая коса",
+    "UID": "item_462",
+    "model": 16626,
+	"img": 10010
+  },
+  {
     "name": "Космическая рука",
     "UID": "item_182",
     "model": 16631,
@@ -1120,6 +1126,12 @@ const itemsData = [
     "UID": "item_183",
     "model": 5939,
 	"img": 50599
+  },
+  {
+    "name": "Мидас",
+    "UID": "item_463",
+    "model": 5576,
+	"img": 10009
   },
   {
     "name": "Ледяной меч в руку",
@@ -2880,4 +2892,3 @@ const itemsData = [
 	"img": 10008
   }
 ];
-
